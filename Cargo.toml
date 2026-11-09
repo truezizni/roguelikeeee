@@ -1,0 +1,15 @@
+[package]
+name = "roguelikeeee"
+version = "0.1.0"
+edition = "2021"
+description = "A small ASCII roguelike built with Rust and macroquad"
+license = "MIT"
+
+[dependencies]
+macroquad = "0.4"
+rand = "0.8"
+
+[profile.release]
+opt-level = 2
+lto = "thin"
+strip = true
